@@ -89,14 +89,23 @@ aside{
     background-color:rgba(0, 0, 0, 0.800) ;
     color:rgb(177, 177, 177);
     text-align: justify;
-    
+
 }
 
-#jackOfBlade{
+#asideInd{
+    height: 3620px;
+}
+
+.token{
     width: 120px;
     margin-top: 15px;
     margin-left: 15px;
-    border: 1px rgb(255, 246, 198) solid;
+}
+aside .asideInd{
+font-size: 120%;
+margin: 4px 6px;
+border-bottom: 1px rgb(255, 246, 198) solid;
+text-align: center;
 
 }
 
@@ -143,7 +152,7 @@ aside{
         grid-area: g4;
         display: flex ;
         justify-content: center;
-        height: 400px;
+        height: 300px;
         padding-top: 10px;
         
     }
@@ -152,7 +161,7 @@ aside{
         grid-area: g5;
         display: flex ;
         justify-content: center;
-        height: 400px;
+        height: 300px;
         padding-top: 10px;
     }
 
@@ -160,7 +169,7 @@ aside{
         grid-area: g6;
         display: flex ;
         justify-content: center;
-        height: 500px;
+        height: 400px;
         padding-bottom: 10px;
         
     }
@@ -207,9 +216,10 @@ aside{
     gap: 10px;
 }
 
-#llaveCab{
+.titlePages{
     margin-left: 20px;
     margin-top: 10px;
+    color: rgb(255, 246, 198);
 }
 
 section table {
@@ -218,21 +228,22 @@ section table {
     margin-left: 15px;
     margin-right: 15px;
     margin-bottom: 5px;
-    border-collapse: separate; /* Mantén los bordes separados */
-    border-spacing: 5px; /* Espacio entre las celdas */
+    border-collapse: separate; 
+    border-spacing: 5px; 
     
 }
 
 section table thead tr {
-    font-size: 160%; /* Ajusta el tamaño */
-    font-weight: bold; /* Opcional: para resaltar */
+    font-size: 160%; 
+    font-weight: bold;
+    color: rgb(255, 255, 255); 
     
 }
 section table th, 
 section table td {
-    border-top: 1px dashed #888; /* Líneas punteadas */
-    padding: 5px; /* Espacio interno dentro de las celdas */
-    text-align: left; /* Alineación del texto */
+    border-top: 1px dashed #888; 
+    padding: 5px; 
+    text-align: left; 
 }
 
 #asideLlaves{
@@ -264,6 +275,29 @@ aside .parrafoAsd{
     margin-left: 15px;
 }
 
+/*Estilos Page Puertas*/
+
+#bodyPuertas{
+    display: grid;
+    grid-template-areas:
+    "a1 a1 a1 a1"
+    "a2 a3 a3 a4"
+    "a5 a5 a5 a5";   
+    grid-template-columns: 12% 38% 38% 12%;
+    grid-template-rows: 120px auto auto;
+    gap: 10px;
+}
+
+#asidePuerta{
+    height: 700px;
+}
+
+.asidePrt{
+    font-size: 120%;
+    margin: 4px 6px;
+    border-bottom: 1px rgb(255, 246, 198) solid;
+    text-align: center
+}
 /*Estilos Footer*/
 
 .footerNavCopy h2{
