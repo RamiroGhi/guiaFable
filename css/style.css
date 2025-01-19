@@ -298,6 +298,24 @@ aside .parrafoAsd{
     border-bottom: 1px rgb(255, 246, 198) solid;
     text-align: center
 }
+
+/*Estilo Page Logros*/
+#bodyLogros{
+    display: grid;
+    grid-template-areas:
+    "a1 a1 a1 a1"
+    "a2 a3 a3 a4"
+    "a5 a5 a5 a5";   
+    grid-template-columns: 12% 38% 38% 12%;
+    grid-template-rows: 120px auto auto;
+    gap: 10px;
+}
+
+.loglogro{
+    height: 50px;
+    margin-top: 5px;
+}
+
 /*Estilos Footer*/
 
 .footerNavCopy h2{
