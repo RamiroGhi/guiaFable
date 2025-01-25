@@ -1,0 +1,23 @@
+/*Estilos Page Puertas*/
+
+#bodyPuertas{
+    display: grid;
+    grid-template-areas:
+    "a1 a1 a1 a1"
+    "a2 a3 a3 a4"
+    "a5 a5 a5 a5";   
+    grid-template-columns: 12% 38% 38% 12%;
+    grid-template-rows: 120px auto auto;
+    gap: 10px;
+}
+
+#asidePuerta{
+    height: 650px;
+}
+
+.asidePrt{
+    font-size: 120%;
+    margin: 4px 6px;
+    border-bottom: 1px rgb(255, 246, 198) solid;
+    text-align: center
+}

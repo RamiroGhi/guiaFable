@@ -1,0 +1,64 @@
+/*Estilo Page Habilidades*/
+
+#bodyHab{
+    display: grid;
+    grid-template-areas:
+    "a1 a1 a1 a1"
+    "a2 a3 a3 a3"
+    "a5 a5 a5 a5";   
+    grid-template-columns: 12% 38% 38% 12%;
+    grid-template-rows: 120px auto auto;
+    gap: 10px;
+}
+
+
+
+.principal{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    text-align:center;
+    border-bottom: 1px rgb(255, 246, 198) solid;
+}
+
+#bordeFuerza{
+    border-left: 1px rgb(255, 246, 198) solid;
+    border-right: 1px rgb(255, 246, 198) solid;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#bordeVol{
+    padding-right: 10px;
+}
+
+.arboles{
+    height: 170px;
+}
+
+#bordeHab{
+    padding-left: 10px; 
+    
+}
+
+.subtitleVol{
+    padding-top: 20px;
+    padding-left: 20px;
+    color: rgb(101, 203, 235);
+}
+
+.arbolVol{
+    height: 200px;
+    padding-right: 20px;
+    padding-left: 15px;
+}
+
+
+
+.tiposHechizos{
+    display: flex;
+    align-items:center;
+    padding: 20px;
+    text-align:left;
+}

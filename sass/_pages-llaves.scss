@@ -1,0 +1,49 @@
+/*Estilos Page Llaves*/
+
+#bodyLlaves{
+    display: grid;
+    grid-template-areas:
+    "a1 a1 a1 a1"
+    "a2 a3 a3 a4"
+    "a5 a5 a5 a5";   
+    grid-template-columns: 12% 38% 38% 12%;
+    grid-template-rows: 120px 1fr auto;
+    gap: 10px;
+}
+
+.titlePages{
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-right: 20px;
+    color: rgb(255, 246, 198);
+    border-bottom: 1px rgb(255, 246, 198) solid;
+}
+
+#asideLlaves{
+    height: 1000px;
+}
+
+#llave-de-plata{
+    width: 120px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+aside .asideLlaves{
+    font-size: 120%;
+    margin: 4px 6px;
+    border-bottom: 1px rgb(255, 246, 198) solid;
+    text-align: center;
+}
+
+aside .parrafoAsd{
+    font-size: 85%;
+    margin: 4px 6px;
+    
+}
+
+#cofre-de-plata{
+    width: 120px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
