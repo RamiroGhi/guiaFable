@@ -1,0 +1,20 @@
+@media (max-width: 765px) {
+    #bodyIndex{
+        grid-template-areas:
+        "a1 a1 a1 a1"
+        "a2 a3 a3 a3"
+        "a2 a4 a4 a4"
+        "a5 a5 a5 a5";   
+        grid-template-columns: 12% 38% 38% 12%;
+        grid-template-rows: 80px auto auto 80px;
+    }
+    #bodyLlaves{
+        grid-template-areas:
+        "a1 a1 a1 a1"
+        "a2 a3 a3 a3"
+        "a2 a4 a4 a4"
+        "a5 a5 a5 a5";   
+        grid-template-columns: 12% 38% 38% 12%;
+        grid-template-rows: 120px auto auto 80px;
+    }   
+}
