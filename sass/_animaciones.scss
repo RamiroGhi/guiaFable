@@ -1,0 +1,10 @@
+#asideInd img{
+    transition: transform 1s ease-in-out;
+    backface-visibility: hidden; 
+    display: inline-block; 
+    transform-style: preserve-3d; 
+}
+#asideInd img:hover {
+    transform: rotateY(360deg) !important;
+    transition: 1s;   
+}

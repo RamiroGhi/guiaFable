@@ -40,8 +40,15 @@ header {
   grid-area: a1;
 }
 
+.boxLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .iconHeader {
   height: 120px;
+  display: flex;
 }
 
 nav {
@@ -136,24 +143,24 @@ aside .asideInd {
   grid-area: g1;
   height: 100%;
   width: 100%;
-  gap: 20px; /* Espacio entre los elementos del grid */
-  padding: 15px; /* Espacio interno del contenedor */
+  gap: 20px;
+  padding: 15px;
 }
 
 .parrafo1 {
   grid-area: g2;
   display: grid;
-  grid-template-rows: 4% 94%; /* Dos columnas */
-  gap: 10px; /* Espacio entre los elementos del grid */
-  padding: 20px; /* Espacio interno del contenedor */
+  grid-template-rows: 4% 94%;
+  gap: 10px;
+  padding: 20px;
 }
 
 .parrafo2 {
   grid-area: g3;
   display: grid;
-  grid-template-rows: 2% 94%; /* Dos columnas */
-  gap: 10px; /* Espacio entre los elementos del grid */
-  padding: 20px; /* Espacio interno del contenedor */
+  grid-template-rows: 2% 94%;
+  gap: 10px;
+  padding: 20px;
 }
 
 .img4 {
@@ -481,6 +488,17 @@ aside .parrafoAsd {
     margin-top: 10px;
     margin-left: 45%;
   }
+}
+#asideInd img {
+  transition: transform 1s ease-in-out;
+  backface-visibility: hidden;
+  display: inline-block;
+  transform-style: preserve-3d;
+}
+
+#asideInd img:hover {
+  transform: rotateY(360deg) !important;
+  transition: 1s;
 }
 
 /*# sourceMappingURL=style.css.map */

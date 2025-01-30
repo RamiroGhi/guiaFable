@@ -41,21 +41,25 @@ body{
 
 header{
     background-color: rgba(0, 0, 0, 0.800);
-    grid-area: a1;
-    
+    grid-area: a1;   
 }
+
+.boxLogo{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
 .iconHeader{
     height: 120px;
+    display: flex;
 }
-
-
 
 nav{
     grid-area: a2;
     width: 12%;
     margin-top: 10px;
-    background-color: rgba(0, 0, 0, 0.800);
-      
+    background-color: rgba(0, 0, 0, 0.800);      
 }
 
 main{
