@@ -118,7 +118,7 @@ section table td {
 }
 
 #asideInd {
-  height: 3350px;
+  height: 3310px;
 }
 
 aside .asideInd {
@@ -128,12 +128,114 @@ aside .asideInd {
   text-align: center;
 }
 
+/*
+.grilla{
+    display: grid;
+            height: auto;
+            grid-template-rows: 70px 950px auto auto auto;
+            grid-template-columns: 48% 48% ;
+
+            grid-template-areas:  
+                                "g1 g1"
+                                "g2 imga2 "
+                                "g3 g3" 
+                                "g4 g4";
+          margin-left: 20px;
+          margin-top: 20px;
+          gap: 10px;                  
+        }
+    .inicio{
+        grid-area: g1;
+        height: 100%;
+        width: 100%;
+        gap: 20px;  
+        padding: 15px; 
+    }
+    .parrafo1{
+        grid-area: g2;
+        display: grid;  
+        grid-template-rows: 4% 94%;  
+        gap: 10px;  
+        padding: 20px;  
+         }
+    .parrafo2 {
+
+        grid-area: g3;
+        display: grid;  
+        grid-template-rows: 2% 94%;  
+        gap: 10px;  
+        padding: 20px;  
+    }
+
+
+    /*
+    .img4{
+        grid-area: g4;
+        display: flex ;
+        justify-content: center;
+        height: 300px;
+        padding-top: 10px;
+
+    }
+
+    .img3{
+        grid-area: g5;
+        display: flex ;
+        justify-content: center;
+        height: 300px;
+        padding-top: 10px;
+    }
+
+    .img2{
+        grid-area: g6;
+        display: flex ;
+        justify-content: center;
+        height: 400px;
+        padding-bottom: 10px;
+
+    }
+
+    .imga2 {  
+        grid-area: imga2;  
+        display: grid;  
+        grid-template-rows: 49% 49%;  
+        grid-template-areas: "img1" "img2";  
+        height: 100%;  
+    }  
+
+    .imag21 {  
+        display: flex;   
+        grid-area: img1;
+        justify-content: center;   
+        align-items: center;   
+        height: 100%;   
+    }  
+
+    .imag22 {  
+        display: flex;  
+        grid-area: img2;   
+        justify-content: center;   
+        align-items: center;   
+        height: 100%;   
+    }  
+
+    .imag21 img, .imag22 img {   
+        max-width: 100%;  
+        max-height: 100%; 
+        object-fit: contain; 
+    }
+
+    .imgTriple{
+        grid-area: g4;
+        display: flex;
+        flex-direction: row;
+    }*/
 .grilla {
   display: grid;
   height: auto;
-  grid-template-rows: 70px 950px auto auto auto;
+  grid-template-rows: 70px auto auto auto;
   grid-template-columns: 48% 48%;
-  grid-template-areas: "g1 g1" "g2 imga2 " "g3 g3" "g4 g5" "g6 g6";
+  grid-template-areas: "g1 g1" "g2 g3" "g4 g4" "g5 g5";
   margin-left: 20px;
   margin-top: 20px;
   gap: 10px;
@@ -155,66 +257,28 @@ aside .asideInd {
   padding: 20px;
 }
 
-.parrafo2 {
+#imgDoble {
   grid-area: g3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.parrafo2 {
+  grid-area: g4;
   display: grid;
   grid-template-rows: 2% 94%;
   gap: 10px;
   padding: 20px;
 }
 
-.img4 {
-  grid-area: g4;
-  display: flex;
-  justify-content: center;
-  height: 300px;
-  padding-top: 10px;
-}
-
-.img3 {
+#imgTriple {
   grid-area: g5;
   display: flex;
-  justify-content: center;
-  height: 300px;
-  padding-top: 10px;
-}
-
-.img2 {
-  grid-area: g6;
-  display: flex;
-  justify-content: center;
-  height: 400px;
-  padding-bottom: 10px;
-}
-
-.imga2 {
-  grid-area: imga2;
-  display: grid;
-  grid-template-rows: 49% 49%;
-  grid-template-areas: "img1" "img2";
-  height: 100%;
-}
-
-.imag21 {
-  display: flex;
-  grid-area: img1;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-
-.imag22 {
-  display: flex;
-  grid-area: img2;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-
-.imag21 img, .imag22 img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
+  min-height: 200px;
+  justify-content: space-around;
+  padding-top: 20px;
 }
 
 /*Estilos Footer*/
@@ -424,22 +488,27 @@ aside .parrafoAsd {
   .grilla {
     display: grid;
     height: auto;
-    grid-template-rows: 70px auto auto auto auto auto;
+    grid-template-rows: 70px auto auto auto;
     grid-template-columns: 48% 48%;
-    grid-template-areas: "g1 g1" "g2 g2 " "imga2 imga2" "g3 g3" "g4 g5" "g6 g6";
+    grid-template-areas: "g1 g1" "g2 g3" "g4 g4" "g5 g5";
     margin-left: 20px;
     margin-top: 20px;
     gap: 10px;
   }
-  .imga2 {
-    grid-area: imga2;
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-areas: "img1 img2";
-    height: 100%;
+  #imgTriple {
+    grid-area: g5;
+    display: flex;
+    height: 50px;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 5px;
   }
   #asideInd {
     height: 1700px;
+    font-size: 95%;
+    margin: 4px 6px;
+    border-bottom: 1px rgb(255, 246, 198) solid;
+    text-align: center;
   }
   /*Media page Llaves*/
   #bodyLlaves {
@@ -488,15 +557,36 @@ aside .parrafoAsd {
     margin-top: 10px;
     margin-left: 45%;
   }
+  /*Media Footer*/
+  .footerNavCopy h2 {
+    font-size: 10px !important;
+  }
+  .footerNav {
+    padding-right: 15px;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    font-size: 5px;
+  }
+  .footerRedes i {
+    font-size: 10px;
+  }
+  footer #logo-heroe {
+    margin-top: 5px;
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 70px;
+    height: 70px;
+  }
 }
-#asideInd img {
+aside img {
   transition: transform 1s ease-in-out;
   backface-visibility: hidden;
   display: inline-block;
   transform-style: preserve-3d;
 }
 
-#asideInd img:hover {
+aside img:hover {
   transform: rotateY(360deg) !important;
   transition: 1s;
 }
