@@ -1,8 +1,64 @@
+@media (max-width: 1200px){
+    /*Index*/
+    #asideInd{
+        height: 3450px;
+        font-size: 95%;
+        margin: 4px 6px;
+        border-bottom: 1px rgb(255, 246, 198) solid;
+        text-align:center;
+    }
+    
+    .token{
+        margin-left: 4px;
+        height: 100px;
+        width: 100px;
+    }
+
+    /*Llaves*/
+    #asideLlaves{
+        height: 1040px;
+    }
+
+    #llave-de-plata{
+        width: 100px;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+
+    #cofre-de-plata{
+        width: 100px;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+
+    /*Puertas*/
+    #asidePuerta{
+        height: 670px;
+        .token{
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+    }
+
+    /*Logros*/
+    .loglogro{
+        height: 53.8px;
+        margin-top: 5px;
+    }
+
+}
+
+
 @media (max-width: 765px) {
 
     .iconHeader{
         height: 80px;
     }
+    
+    nav{
+        width: 13%;
+    }
+
     /*Media Index*/
     #bodyIndex{
         grid-template-areas:
@@ -10,8 +66,10 @@
         "a2 a3 a3 a3"
         "a2 a4 a4 a4"
         "a5 a5 a5 a5";   
-        grid-template-columns: 12% 38% 38% 12%;
+        grid-template-columns: 14% 36% 38% 12%;
         grid-template-rows: 80px auto auto 80px;
+        column-gap: 5px;
+        gap: 5px;
     }
 
     .grilla{
@@ -39,7 +97,7 @@
         } 
     
     #asideInd{
-        height: 1700px;
+        height: 1500px;
         font-size: 95%;
         margin: 4px 6px;
         border-bottom: 1px rgb(255, 246, 198) solid;
@@ -52,12 +110,15 @@
         "a2 a3 a3 a3"
         "a2 a4 a4 a4"
         "a5 a5 a5 a5";   
-        grid-template-columns: 12% 38% 38% 12%;
+        grid-template-columns: 14% 36% 38% 12%;
         grid-template-rows: 80px auto auto 80px;
+        gap: 5px;
+        column-gap: 5px;
     }   
 
     #asideLlaves{
         height: 500px;
+        text-align: center;
     }
     /*Media page Puertas*/
     #bodyPuertas{
@@ -69,10 +130,13 @@
         "a5 a5 a5 a5";  
         grid-template-columns: 12% 38% 38% 12%;
         grid-template-rows: 80px auto auto 80px;
-        gap: 10px;
+        gap: 5px;
+        column-gap: 5px;
     }
     #asidePuerta{
         height: 280px;
+        text-align:center;
+        margin-left: 0px;
     }
 
     /*Media page Habilidades*/
@@ -84,7 +148,8 @@
         "a5 a5 a5 a5";  
         grid-template-columns: 12% 38% 38% 12%;
         grid-template-rows: 80px auto 80px;
-        gap: 10px;
+        gap: 5px;
+        column-gap: 5px;
     }
     /*Media page Logros*/
     #bodyLogros{
@@ -96,9 +161,9 @@
         "a5 a5 a5 a5";  
         grid-template-columns: 12% 38% 38% 12%;
         grid-template-rows: 80px auto auto 80px;
-        gap: 10px;
+        gap: 5px;
+        column-gap: 5px;
     }
-
     .asideLogro{
         font-size: 95%;
         margin: 4px 6px;
